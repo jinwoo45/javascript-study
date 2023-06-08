@@ -1,0 +1,16 @@
+function solution(price) {
+  console.log(price);
+  let discount;
+  if (price >= 500000) {
+    discount = price * 0.2;
+  } else if (price >= 300000) {
+    discount = price * 0.1;
+  } else if (price >= 100000) {
+    discount = price * 0.05;
+  } else {
+    discount = 0;
+  }
+
+  var answer = price - discount;
+  return Math.floor(answer);
+}
